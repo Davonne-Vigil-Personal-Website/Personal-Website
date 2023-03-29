@@ -6,7 +6,7 @@
 }
 
 html {
-    background-image: url("pinkLaptop.jpg");
+    background-image: url(".jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
