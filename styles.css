@@ -1,0 +1,60 @@
+/*landing page css*/
+
+/*html*/
+body html {
+    height: 100%;
+    margin: 0;  
+}
+
+html {
+    background-image: url("clouds.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*header*/
+ul {
+    display: inline;
+}
+
+li {
+    color: white;
+    float: right;
+    font-family: 'Lobster', cursive;
+    font-size: 22pt;
+    list-style-type: none;
+    padding: 30px;
+ }
+    
+li:hover {
+    color: #F5D4A7;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*content*/
+.content {
+    margin-top: 300px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 5em;
+    color: white;
+    text-decoration: underline;
+    text-shadow: 2px 1px #DF486C;
+}
+
+quote {
+    font-family: sans-serif;
+    color: white;
+    font-size: 18pt;
+}
+
+/*footer*/
+.socialMediaLink {
+    padding: 20px;
+    margin-top: 300px;
+    cursor: pointer;
+}

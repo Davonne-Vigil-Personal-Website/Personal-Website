@@ -1,0 +1,93 @@
+/*portfolio page css*/
+
+/*html*/
+ * {
+    box-sizing: border-box;
+ }
+
+html {
+    background-color: #FF8696;
+}
+
+/*header*/
+ul {
+    display: inline;
+}
+
+li {
+    color: #DF486C;
+    float: right;
+    font-family: 'Lobster', cursive;
+    font-size: 22pt;
+    list-style-type: none;
+    padding: 30px;
+ }
+
+li:hover {
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*body*/
+.box {
+    width: 100%;
+    height: auto;
+    max-width: 1300px;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+ /*content*/
+h1 {
+    color: #DF486C;
+    font-family: 'Lobster', cursive;
+    margin: 20px;
+    padding: 50px;
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+.github {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 60px;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18pt;
+    text-align: justify;
+}
+
+.follow {
+    width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 40px;
+    padding: 50px;
+}
+
+a, .github {
+    font-family: monospace;
+    color: black;
+    font-size: 16pt;
+    padding: 10px;
+}
+
+.github,a:hover {
+    color:  #DF486C;
+    cursor: pointer;
+    font-weight: bold;
+
+}
