@@ -24,7 +24,7 @@ li {
  }
 
 li:hover {
-    color: black;
+    color: #7ADDE8;
     cursor: pointer;
     text-decoration: underline;
 }
