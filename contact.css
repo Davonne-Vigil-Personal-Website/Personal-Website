@@ -58,7 +58,7 @@ input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
     font-family: sans-serif;
-    border: 1px solid pink;
+    border: 1px solid #7ADDE8;
     border-radius: 20px;
     box-sizing: border-box;
     margin-top: 6px;
