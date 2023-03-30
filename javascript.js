@@ -1,9 +1,13 @@
 //landing page javascript
+//console logs "Hello World"
 //prompt question to enter your name with an alert
 //changes h1 to a bigger size when hovered over
 //changes h1 back to normal
-//console logs "Hello World"
 
+
+console.log("Hello World!");
+
+//
 let question = prompt("Hello! What is your name?");
     alert("Hi, " + question + "!" + " " + "Welcome To Block 9 My Personal Website");
 
@@ -21,5 +25,3 @@ function changeBack() {
 
 changeBack();
 
-//
-console.log("Hello World!");
