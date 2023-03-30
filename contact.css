@@ -1,4 +1,5 @@
-/*contact page  css*/
+/*contact page  css
+Not on master branch. This was originally on my site, when site was pink.*/
 
 /*html*/
 * {
@@ -6,14 +7,14 @@
 }
 
 html {
-    background-image: url(".jpg");
+    background-image: url("blueLaptop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 /*header*/
 h1 {
-    color: #DF486C;
+    color: #7ADDE8;
     font-family: 'Lobster', cursive;
     text-align: center;
     font-size: 4em;
@@ -26,7 +27,7 @@ ul {
 }
 
 li {
-    color: #DF486C;
+    color: #7ADDE8;
     float: right;
     font-family: 'Lobster', cursive;
     font-size: 22pt;
@@ -58,7 +59,7 @@ input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
     font-family: sans-serif;
-    border: 1px solid pink;
+    border: 1px solid #7ADDE8;
     border-radius: 20px;
     box-sizing: border-box;
     margin-top: 6px;
@@ -67,7 +68,7 @@ input[type=text], select, textarea {
   }
   
 input[type=submit] {
-    background-color: pink;
+    background-color: #7ADDE8;
     font-family: 'Lobster', cursive;
     color: white;
     font-size: 14pt;
@@ -78,6 +79,6 @@ input[type=submit] {
   }
   
 input[type=submit]:hover {
-    background-color: #DF486C;;
+   color: black;
   }
   
