@@ -41,6 +41,7 @@ li:hover {
     margin-right: auto;
     margin-top: 100px;
     margin-bottom: 60px;
+    position: relative;
 }
 
 h1 {
@@ -61,7 +62,7 @@ h1 {
     margin-left: 80px;
 }
 
-.column {
+*/*.column {
     float: left;
     width: 50%;
     padding: 20px;
@@ -73,7 +74,7 @@ h1 {
     content: "";
     display: table;
     clear: both;
-}
+} */
 
 h2 {
     color: #7ADDE8;
@@ -89,7 +90,7 @@ p {
     text-align: justify;
 }
 
-/*my images, have to work on making images responsive*/
+/*my images, have to work on making images responsive
 .myImages, img {
     width: 30%;
     height: 350px;
@@ -98,6 +99,23 @@ p {
     border-radius: 10px;
     margin: 20px;
     cursor: pointer;
+}  */
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    margin: 0;
+}
+
+img {
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+@media  and  {
+    
 }
 
 .myImages:hover {
