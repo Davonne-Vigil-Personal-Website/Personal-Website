@@ -7,48 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link href="about.css" rel="stylesheet">
+    <script src="about.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Bangers&family=Bree+Serif&family=Concert+One&family=Cookie&family=Courgette&family=Crimson+Pro:wght@200&family=DM+Serif+Display&family=Dangrek&family=Dela+Gothic+One&family=Koulen&family=Lateef&family=Lexend+Deca:wght@300&family=Lobster&family=Lobster+Two&family=Monoton&family=Oleo+Script+Swash+Caps&family=PT+Serif&family=Pacifico&family=Permanent+Marker&family=Playball&family=Praise&family=Racing+Sans+One&family=Righteous&family=Satisfy&family=Space+Mono&family=Twinkle+Star&family=Vollkorn&family=Yellowtail&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <div class="box">
-        <ul>
-            <a href="contact.html" target="_blank"><li>Contact</li></a>
-            <a href="portfolio.html" target="_blank"><li>Portfolio</li></a>
-            <a href="about.html" target="_blank"><li>About</li></a>
-            <a href="index.html" target="_blank"><li>Home</li></a>
-        </ul>
-      
-         <h1>About Me</h1>
+<body> 
+    <div class="flex-container">
+      <header>
+         <a href="index.html"><li>Home</li></a>
+         <a href="about.html"><li>About</li></a>
+         <a href="portfolio.html"><li>Portfolio</li></a>
+         <a href="contact.html"><li>Contact</li></a>
+      </header>
+    </div>
 
-        <!--<div class="row">
-            <div class="colum">
-                 <img src="davonne.jpeg" alt="Pciture of Davonne" class="davonne">
-           </div>
+    <div class="flex-container2">
+       <h1>About Me</h1>
+       <img src="images/davonne.jpeg" alt="Pciture of Davonne" class="davonne">
+       <p>Hi, I'm Davonne!</p>
+       <p>Again, welcome to my Website! Here you will find out more about me and see some Projects 
+        I have been working on. First a little about me, I am originally from Denver, Colorado but 
+        have been living in Dallas, Texas for 10 years with my 4 dogs. I love Science, History, and Technology.
+        My dream jobs would be Nasa, Spacex, Google and Amazon. I've been on a coding journey, with the hope to land
+        a job in the Tech Industry as a Full Stack Developer.I have been self taught for a little over a year, learning
+        HTML5, CSS3 and Javascript. I also am attending Full Stack Academy Bootcamp to enchance my codding skills and Career.
+        I hope you enjoy my website and if you or any family or friends would like a Website, I am available for Freelance work. 
+        I have passion, creativity, vision, to work together and build the website of your dreams. </p>
+    </div> <!--last div flex-container2-->
 
-            <div class="column">
-                 <p>Again, welcome to my Website! Here you will find out more about me and see some Projects 
-                 I have been working on. First a little about me, I am originally from Denver, Colorado but 
-                 have been living in Dallas, Texas for 10 years with my 4 dogs. I love Science, History, and Technology. 
-                 I am on a coding journey, with the hope to land a job in the Tech Industry as a Full Stack Developer. I am available to work as a 
-                 Freelancer, if you or any family or friends would like a Website. I have passion, creativity,
-                vision, and come from a Management background having commuication and organization skills. 
-                I know together, we can build the website of your dreams.</p>
-           </div>
-        </div>   -->
+    <br>
+    <br>l
 
-        <br>
-        <br>
-        
-        <div class="grid-container">
-            <div><img src="denver.jpg" class="myImages"></div>
-            <div><img src="doggies.jpg" class="myImages"></div>
-            <div><img src="dallas.jpg" class="myImages"></div>
-        </div>
-
+    <div class="myInterests">
+        <h2>My hobbies and Interests</h2>
+        <img src="images/egypt.jpg" class="myLife" id="hobbies" onmouseover="changePic();" onmouseout="changeBack();">
+        <img src="images/earth.jpg" class="myLife" id="space" onmouseover="swapPic();" onmouseout="swapBack();">
+        <img src="images/doggies.jpg" class="myLife" id="dogs" onmouseover="newPic();" onmouseout="oldPic();">
+        <img src="images/basketball.jpg" class="myLife" id="basketball" onmouseover="tornado()" onmouseout="basketball();">
     </div>
 
 </body>

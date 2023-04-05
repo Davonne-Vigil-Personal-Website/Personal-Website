@@ -1,38 +1,54 @@
 /*about page css*/
 
-/*html*/
- * {
+  /*hmtl*/
+  * {
     box-sizing: border-box;
- }
+    padding: 0;
+    margin: 0;
+  }
 
-html {
-    background-color: #7ADDE8; 
+  html {
+    background-color: #7ADDE8;
+  }
+
+  /*box*/
+  .flex-container {
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-/*header*/
-ul {
+  /*header*/
+  a, li {
     display: inline;
-}
-
-li {
-    color: black;
-    float: right;
+    text-decoration: none;
     font-family: 'Lobster', cursive;
+    padding: 10px;
     font-size: 22pt;
-    list-style-type: none;
-    padding: 30px;
- }
+    color: black;
+  }
 
-li:hover {
+  li:hover {
     color: #7ADDE8;
     cursor: pointer;
     text-decoration: underline;
-}
+  }
 
-/*body*/
-.box {
+  @media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+  }
+
+  /*content*/
+  .flex-container2 {
+    display: flex;
+    background-color: white;
     width: 100%;
-    height: auto;
+    height: 100%;
     max-width: 1300px;
     background-color: white;
     border: 3px solid white;
@@ -40,87 +56,131 @@ li:hover {
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
-    margin-bottom: 60px;
+    padding: 40px;
     position: relative;
-}
+  }
 
-h1 {
-    color: #7ADDE8;
-    font-family: 'Lobster', cursive;
-    margin: 20px;
-    padding: 50px;
+  @media (max-width: 800px) {
+    .flex-container2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+  @media (max-width: 300px) {
+    .flex-container2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+  h1 {
+    color:#7ADDE8;
+    font-family: 'Lobster' ,cursive;
+    position: absolute;
+    z-index: 1;
+    top: -10px;
     font-size: 5em;
+    margin-top: 40px;
     text-decoration: underline;
-}
+  }
 
-.davonne {
+  .davonne {
     width: 100%;
     height: auto;
     max-width: 330px;
-    float: left;
     border-radius: 50%;
-    margin-left: 80px;
-}
-
-*/*.column {
-    float: left;
-    width: 50%;
     padding: 20px;
-    height: 500px;
-    margin-left: 20px;
-}
+    margin-top: 180px;
+  }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-} */
+  /*I cant get the picture of me to get smaller when you resize the screen. But then it does
+  eventually get smaller when you reach a smaller screen size*/
 
-h2 {
-    color: #7ADDE8;
-    font-family: 'Lobster', cursive;
-    font-size: 24pt;
-}
+  @media (max-width: 805px) {
+    .davonne {
+        width: 100%;
+        height: auto;
+        max-width: 330px;
+        border-radius: 50%;
+    }
+  }
 
-/*have to work on making text responsive*/
-p {
+  p {
+    margin-top: 40px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 18pt;
-    padding: 10px;
-    text-align: justify;
-}
+    padding: 20px;
+    margin-top: 200px;
+  }
 
-/*my images, have to work on making images responsive
-.myImages, img {
-    width: 30%;
+  p:nth-of-type(1) {
+    color:#7ADDE8;
+    position: absolute;
+    top: -5%;
+    z-index: 1;
+    font-family: 'Lobster', cursive;
+    font-size: 24pt;
+    margin-left: 320px;
+  }
+
+  /*have to get this line of text to be responsive with smaller screens like cell phones*/
+  @media (max-width: 800px) {
+    p:nth-of-type(1) {
+      color:#7ADDE8;
+      position: absolute;
+      z-index: 1;
+      font-family: 'Lobster', cursive;
+      font-size: 24pt;
+      top: 35%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  /*images and my interests*/
+  h2 {
+    display: inline;
+    margin-bottom: 380px;
+    position: absolute;
+    font-family: 'Lobster', cursive;
+    color: #7ADDE8;
+    font-size: 20pt;
+  }
+
+  .myInterests {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px;
+    margin: 25px;
+    background-color: white;
+    max-width: 1300px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .myInterests img {
+    width: 20%;
     height: 350px;
     object-fit: cover;
+    padding: 0 4px;
     padding-bottom: 10px;
     border-radius: 10px;
-    margin: 20px;
-    cursor: pointer;
-}  */
-.grid-container {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: auto auto auto;
-    gap: 1rem;
-    margin: 0;
-}
+    margin: 10px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
 
-img {
-    width: 350px;
-    height: 300px;
-    border-radius: 20px;
-}
-
-@media  and  {
-    
-}
-
-.myImages:hover {
+  .myLife:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
+    cursor: pointer;
   }
   
   @keyframes shake {
@@ -137,4 +197,4 @@ img {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
   
-  
+ 

@@ -13,6 +13,12 @@ html {
 }
 
 /*header*/
+.flex-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
 ul {
     display: inline;
 }
@@ -34,7 +40,7 @@ li:hover {
 
 /*content*/
 .content {
-    margin-top: 300px;
+    margin-top: 250px;
     text-align: center;
 }
 
