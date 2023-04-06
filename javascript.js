@@ -5,7 +5,7 @@
 //console logs "Hello World"
 
 let question = prompt("Hello! What is your name?");
-    alert("Hi, " + question + "!" + " " + "Welcome To Block 9 My Personal Website");
+    alert("Hi, " + question + "!" + " " + "Welcome To Block 12 My Updated Personal Website");
 
 //
 function changeSize() {
