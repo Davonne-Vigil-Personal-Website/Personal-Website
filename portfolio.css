@@ -1,6 +1,6 @@
-/*portfolio page css*/
+/*portfolio page css
 
-/*html*/
+/*html
 * {
     box-sizing: border-box;
  }
@@ -9,7 +9,7 @@ html {
     background-color: #7ADDE8;
 }
 
-/*header*/
+/*header
 ul {
     display: inline;
 }
@@ -29,7 +29,7 @@ li:hover {
     text-decoration: underline;
 }
 
-/*body*/
+/*body
 .box {
     width: 100%;
     height: 100%;
@@ -43,7 +43,7 @@ li:hover {
     margin-bottom: 60px; 
 }
 
- /*content*/
+ /*content
 h1 {
     color: #7ADDE8;
     font-family: 'Lobster', cursive;
@@ -53,7 +53,7 @@ h1 {
     text-decoration: underline;
 }
 
-/*image of github and github link*/
+/*image of github and github link
 .github {
     width: 100%;
     height: auto;
@@ -95,7 +95,7 @@ a, .github {
     font-weight: bold;
 }
 
-/*my projects*/
+/*my projects
 .column {
     float: left;
     width: 40%;
@@ -128,4 +128,40 @@ p {
     width: 100%;
     height: auto;
     max-width: 350px;
+}*/
+
+/*html*/
+html {
+    background-color: #7ADDE8;
 }
+
+/*header*/
+.flex-container {
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+ a, li {
+    display: inline;
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    padding: 10px;
+    font-size: 22pt;
+    color: black;
+  }
+
+  li:hover {
+    color: #7ADDE8;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+  }
