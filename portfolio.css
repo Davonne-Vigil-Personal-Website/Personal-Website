@@ -135,33 +135,123 @@ html {
     background-color: #7ADDE8;
 }
 
-/*header*/
-.flex-container {
-    background-color: white;
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px;
-    margin-bottom: 20px;
+body {
+    margin: 0;
 }
 
- a, li {
+/*header*/
+.flex-container {
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    padding: 20px;
+}
+
+a, li {
     display: inline;
     text-decoration: none;
     font-family: 'Lobster', cursive;
-    padding: 10px;
+    padding: 20px;
     font-size: 22pt;
     color: black;
   }
 
-  li:hover {
+li:hover {
     color: #7ADDE8;
     cursor: pointer;
     text-decoration: underline;
   }
 
-  @media (max-width: 800px) {
+@media (max-width: 800px) {
     .flex-container {
         flex-direction: column;
         justify-content: center;
     }
   }
+
+/*main content*/
+.main {
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 60px; 
+}
+
+.myPortfolio {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+.myPortfolio span {
+    display: inline-block;
+    animation: flip 7s infinite;
+    color:#7ADDE8;
+    text-decoration: underline;
+    font-size: 4em;
+}
+
+@keyframes flip {
+0%, 60%  {
+      transform: rotateY(360deg) 
+    }
+  }
+
+/*my projects*/
+.myProjects {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+}
+
+.column {
+    float: left;
+    width: 45%;
+    padding: 20px;
+    height: 350px;
+}
+
+/*I cannot get site to be responsive for small screens like cell phones*/
+@media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+      float: left;
+      margin-left: 150px; 
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 40%;
+      float: left;
+      margin-left: 200px; 
+    }
+  }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#box2 {
+    width: 100%;
+    height: auto;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: justify;
+}
