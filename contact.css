@@ -6,19 +6,30 @@
 }
 
 html {
-    background-image: url("blueLaptop.jpg");
+    background-image: url("images/clouds.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+body {
+    margin: 0;
+}
+
 /*header*/
 h1 {
-    color: #7ADDE8;
+    color: white;
     font-family: 'Lobster', cursive;
     text-align: center;
     font-size: 4em;
-    margin-top: 40px;
+    margin-top: 60px;
     text-decoration: underline;
+}
+
+.flex-container {
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
 }
 
 ul {
@@ -26,16 +37,16 @@ ul {
 }
 
 li {
-    color: #7ADDE8;
+    color: black;
     float: right;
     font-family: 'Lobster', cursive;
     font-size: 22pt;
     list-style-type: none;
-    padding: 30px;
+    padding: 20px;
  }
 
 li:hover {
-    color: white;
+    color: #7ADDE8;
     cursor: pointer;
     text-decoration: underline;
 }
@@ -50,16 +61,22 @@ li:hover {
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 130px;
-    margin-bottom: 60px;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
+
+  label {
+    font-size: 18pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
 
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
-    font-family: sans-serif;
-    border: 1px solid #7ADDE8;
-    border-radius: 20px;
+    font-family: monospace;
+    font-size: 14pt;
+    border-radius: 8px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
@@ -67,17 +84,23 @@ input[type=text], select, textarea {
   }
   
 input[type=submit] {
-    background-color: #7ADDE8;
+    background-color: lightblue;
     font-family: 'Lobster', cursive;
     color: white;
     font-size: 14pt;
     padding: 12px 20px;
-    border: none;
     border-radius: 10px;
     cursor: pointer;
   }
   
 input[type=submit]:hover {
-    color: black;
+    color: burlywood;
   }
   
+ /*footer*/
+ footer {
+    text-align: center;
+    color: white;
+    font-family: 'Lobster', cursive;
+    padding: 20px;
+   }

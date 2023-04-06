@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title> 
     <link href="contact.css" rel="stylesheet">
+    <script src="contact.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -15,22 +16,25 @@
 
 <body>
     <header>
-      <h1>Contact Me</h1>
-      <ul>
-        <a href="contact.html" target="_blank"><li>Contact</li></a>
-        <a href="portfolio.html" target="_blank"><li>Portfolio</li></a>
-        <a href="about.html" target="_blank"><li>About</li></a>
-        <a href="index.html" target="_blank"><li>Home</li></a>
-    </ul>
+       <div class="flex-container">
+        <header>
+            <a href="contact.html"><li>Contact</li></a>
+            <a href="portfolio.html"><li>Portfolio</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="index.html"><li>Home</li></a>
+        </header>
+      </div>
+
+    <h1>Connect With Me</h1>
 
     <div class="container">
-        <form>
+        <form id="form" method="post" target="_blank">
             <label for="firstName">First Name</label>
-            <input type="text" id="fName" name="firstname"
+            <input type="text" name="firstname"
             placeholder="Enter Your First Name">
 
             <label for="lastName">Last Name</label>
-            <input type="text" id="lName" name="lastname"
+            <input type="text" name="lastname"
             placeholder="Enter Your Last Name">
 
             <label for="email">Email Address</label>
@@ -38,12 +42,20 @@
             placeholder="Enter Your Email">
 
             <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" 
-            placeholder="Message Me" style="height:200px"></textarea>
+            <input type="text" id="subject" name="subject"
+            placeholder="Enter Main Topic">
+
+            <label for="message">Message Me</label>
+            <textarea id="message" name="subject" 
+            placeholder="Insert Text" style="height:200px"></textarea>
             
-            <input type="submit" value="Send">
+            <input type="submit" value="Submit">
         </form>
     </div>
+
+    <footer>
+        Djvd.Services Inc. 
+    </footer>
 
 </body>
 </html>
