@@ -16,13 +16,17 @@ body {
 }
 
 /*header*/
-h1 {
-    color: white;
+.connect {
+    color: lightblue;
     font-family: 'Lobster', cursive;
     text-align: center;
     font-size: 4em;
     margin-top: 60px;
     text-decoration: underline;
+}
+
+h1 {
+    color: white !important;
 }
 
 .flex-container {
