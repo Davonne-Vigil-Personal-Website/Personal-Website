@@ -1,134 +1,4 @@
-/*portfolio page css
-
-/*html
-* {
-    box-sizing: border-box;
- }
-
-html {
-    background-color: #7ADDE8;
-}
-
-/*header
-ul {
-    display: inline;
-}
-
-li {
-    color: black;
-    float: right;
-    font-family: 'Lobster', cursive;
-    font-size: 22pt;
-    list-style-type: none;
-    padding: 30px;
- }
-
-li:hover {
-    color: #7ADDE8;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-/*body
-.box {
-    width: 100%;
-    height: 100%;
-    max-width: 1300px;
-    background-color: white;
-    border: 3px solid white;
-    border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    margin-bottom: 60px; 
-}
-
- /*content
-h1 {
-    color: #7ADDE8;
-    font-family: 'Lobster', cursive;
-    margin: 20px;
-    padding: 50px;
-    font-size: 3em;
-    text-decoration: underline;
-}
-
-/*image of github and github link
-.github {
-    width: 100%;
-    height: auto;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    border-radius: 60px;
-    padding: 30px;
-    margin-bottom: 80px;
-}
-
-p1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18pt;
-    text-align: justify;
-}
-
-.follow {
-    width: 600px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto; 
-    padding: 20px;
-    display: block;
-    margin-top: 60px;
-}
-
-a, .github {
-    font-family: monospace;
-    color: black;
-    font-size: 16pt;
-    padding: 10px;
-}
-
-.github,a:hover {
-    color:  #7ADDE8;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-/*my projects
-.column {
-    float: left;
-    width: 40%;
-    padding: 20px;
-    height: 350px;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-#box2 {
-    width: 100%;
-    height: auto;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 14pt;
-    font-weight: bold;
-}
-
-.myProjects {
-    width: 100%;
-    height: auto;
-    max-width: 350px;
-}*/
+/*portfolio page css*/
 
 /*html*/
 html {
@@ -154,20 +24,20 @@ a, li {
     padding: 20px;
     font-size: 22pt;
     color: black;
-  }
+}
 
 li:hover {
     color: #7ADDE8;
     cursor: pointer;
     text-decoration: underline;
-  }
+}
 
 @media (max-width: 800px) {
     .flex-container {
         flex-direction: column;
         justify-content: center;
     }
-  }
+}
 
 /*main content*/
 .main {
@@ -183,6 +53,7 @@ li:hover {
     margin-bottom: 60px; 
 }
 
+/*heading 1*/
 .myPortfolio {
     padding: 20px;
     text-align: center;
@@ -201,7 +72,7 @@ li:hover {
 0%, 60%  {
       transform: rotateY(360deg) 
     }
-  }
+}
 
 /*my projects*/
 .myProjects {
@@ -218,21 +89,22 @@ li:hover {
 }
 
 /*I cannot get site to be responsive for small screens like cell phones*/
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 40%;
+      float: left;
+      margin-left: 100px; 
+    }
+}
+
 @media screen and (max-width: 900px) {
     .column {
       width: 50%;
       float: left;
       margin-left: 150px; 
     }
-  }
-
-@media screen and (max-width: 600px) {
-    .column {
-      width: 40%;
-      float: left;
-      margin-left: 200px; 
-    }
-  }
+}
 
 .row:after {
     content: "";
@@ -254,4 +126,79 @@ p {
     font-size: 14pt;
     font-weight: bold;
     text-align: justify;
+}
+
+/*github image and text*/
+.github {
+    width: 100%;
+    height: auto;
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 100px;
+    margin-bottom: 80px;
+}
+
+.myGithub {
+    position: relative;
+    text-align: center;
+}
+
+.link {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22pt;
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .link {
+        font-size: 16pt;
+        text-align: center;
+    }
+} 
+
+.explore {
+    background-color: #0D4DAD !important;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+    font-size: 14pt;
+    font-family: 'Space Grotesk', sans-serif;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.explore:hover {
+    background-color: burlywood;
+    color: #7ADDE8;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .explore {
+        top: 300px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .explore {
+        top: 300px;
+    }
+}
+
+/*footer*/
+ footer {
+    text-align: center;
+    color: white;
+    font-family: 'Lobster', cursive;
+    padding: 20px;
 }
