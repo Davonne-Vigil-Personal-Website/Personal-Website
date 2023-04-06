@@ -114,6 +114,7 @@
     font-size: 18pt;
     padding: 20px;
     margin-top: 200px;
+    text-align: justify;
   }
 
   p:nth-of-type(1) {
