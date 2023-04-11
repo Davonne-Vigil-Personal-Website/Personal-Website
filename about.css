@@ -108,6 +108,15 @@
     }
   }
 
+  @media (max-width: 1024px) {
+       .davonne {
+        width: 100%;
+        height: 420px;
+        max-width: 350px;
+        margin-top: 240px;
+       }
+  }
+
   p {
     margin-top: 40px;
     font-family: 'Times New Roman', Times, serif;
