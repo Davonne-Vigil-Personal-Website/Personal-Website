@@ -43,6 +43,30 @@
     }
   }
 
+  @media (max-width: 280px) {
+    a, li {
+        display: block;
+    }
+  }
+
+  @media (max-width: 360px) {
+    a, li {
+        display: block;
+    }
+  }
+
+  @media (max-width: 375px) {
+    a, li {
+        display: block;
+    }
+  }
+
+  @media (max-width: 414px) {
+    a, li {
+        display: block;
+    }
+  }
+
   /*content*/
   .flex-container2 {
     display: flex;
@@ -76,6 +100,8 @@
     }
   }
 
+  /*heading 1*/
+
   h1 {
     color:#7ADDE8;
     font-family: 'Lobster' ,cursive;
@@ -87,6 +113,22 @@
     text-decoration: underline;
   }
 
+  @media (max-width: 280px) {
+    h1 {
+    color:#7ADDE8;
+    font-family: 'Lobster' ,cursive;
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    font-size: 4em;
+    margin-top: 40px;
+    text-decoration: underline;
+
+    }
+  }
+
+
+  /*picture of me*/
   .davonne {
     width: 100%;
     height: auto;
@@ -96,8 +138,7 @@
     margin-top: 180px;
   }
 
-  /*I cant get the picture of me to get smaller when you resize the screen. But then it does
-  eventually get smaller when you reach a smaller screen size*/
+  /*I cant get the picture of me to get smaller on mobile devices*/
 
   @media (max-width: 805px) {
     .davonne {
@@ -117,6 +158,35 @@
        }
   }
 
+  @media (max-width: 393px) {
+    .davonne {
+     width: 100%;
+     height: 300px;
+     max-width: 300px;
+     margin-top: 240px;
+    }
+}
+
+@media (max-width: 414px) {
+  .davonne {
+   width: 100%;
+   height: 300px;
+   max-width: 300px;
+   margin-top: 240px;
+  }
+}
+
+@media (max-width: 280px) {
+  .davonne {
+   width: 100%;
+   height: 250px;
+   max-width: 250px;
+   margin-top: 160px;
+  }
+}
+
+/*paragraph about me*/
+
   p:nth-of-type(1) {
     color:#7ADDE8;
     position: absolute;
@@ -135,8 +205,6 @@
     margin-top: 200px;
     text-align: justify;
   }
-
-
 
   /*have to get this line of text to be responsive with smaller screens like cell phones*/
   @media (max-width: 800px) {
