@@ -141,7 +141,6 @@
     margin-top: 180px;
   }
 
-  /*I cant get the picture of me to get smaller on mobile devices*/
   @media (max-width: 805px) {
     .davonne {
         width: 100%;
