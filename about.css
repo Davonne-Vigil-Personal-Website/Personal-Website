@@ -117,6 +117,16 @@
        }
   }
 
+  p:nth-of-type(1) {
+    color:#7ADDE8;
+    position: absolute;
+    top: -5%;
+    z-index: 1;
+    font-family: 'Lobster', cursive;
+    font-size: 24pt;
+    margin-left: 331px;
+  }
+
   p {
     margin-top: 40px;
     font-family: 'Times New Roman', Times, serif;
@@ -126,15 +136,7 @@
     text-align: justify;
   }
 
-  p:nth-of-type(1) {
-    color:#7ADDE8;
-    position: absolute;
-    top: -5%;
-    z-index: 1;
-    font-family: 'Lobster', cursive;
-    font-size: 24pt;
-    margin-left: 320px;
-  }
+
 
   /*have to get this line of text to be responsive with smaller screens like cell phones*/
   @media (max-width: 800px) {
@@ -144,7 +146,7 @@
       z-index: 1;
       font-family: 'Lobster', cursive;
       font-size: 24pt;
-      top: 35%;
+      top: 40%;
       margin-left: auto;
       margin-right: auto;
     }
@@ -159,6 +161,7 @@
     color: #7ADDE8;
     font-size: 20pt;
     text-decoration: underline;
+    margin-top: -65px !important;
   }
 
   .myInterests {
@@ -184,7 +187,7 @@
     padding-bottom: 10px;
     border-radius: 10px;
     margin: 10px;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 80px;
   }
 
