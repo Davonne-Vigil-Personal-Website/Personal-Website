@@ -46,6 +46,7 @@
   @media (max-width: 280px) {
     a, li {
         display: block;
+      
     }
   }
 
@@ -61,11 +62,18 @@
     }
   }
 
-  @media (max-width: 414px) {
+  @media (max-width: 415px) {
     a, li {
         display: block;
     }
   }
+
+  @media (max-width: 420px) {
+    a, li {
+        display: block;
+    }
+  }
+
 
   /*content*/
   .flex-container2 {
@@ -127,7 +135,6 @@
     }
   }
 
-
   /*picture of me*/
   .davonne {
     width: 100%;
@@ -139,7 +146,6 @@
   }
 
   /*I cant get the picture of me to get smaller on mobile devices*/
-
   @media (max-width: 805px) {
     .davonne {
         width: 100%;
@@ -164,7 +170,7 @@
      height: 300px;
      max-width: 300px;
      margin-top: 240px;
-    }
+  }
 }
 
 @media (max-width: 414px) {
