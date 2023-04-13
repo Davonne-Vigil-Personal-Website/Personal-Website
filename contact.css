@@ -3,12 +3,17 @@
 /*html*/
 * {
     box-sizing: border-box;
+  
 }
 
 html {
     background-image: url("images/clouds.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    min-height: 100%;
 }
 
 body {
@@ -16,6 +21,66 @@ body {
 }
 
 /*header*/
+.flex-container {
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+a, li {
+    display: inline;
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    padding: 10px;
+    font-size: 22pt;
+    color: black;
+  }
+
+  li:hover {
+    color: #7ADDE8;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+    .flex-container {
+       justify-content: center;
+       align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .links {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .links {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 414px) {
+    .links {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+
+/*heading 1*/
 .connect {
     color: lightblue;
     font-family: 'Lobster', cursive;
@@ -27,32 +92,6 @@ body {
 
 h1 {
     color: white !important;
-}
-
-.flex-container {
-    background-color: white;
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
-}
-
-ul {
-    display: inline;
-}
-
-li {
-    color: black;
-    float: right;
-    font-family: 'Lobster', cursive;
-    font-size: 22pt;
-    list-style-type: none;
-    padding: 20px;
- }
-
-li:hover {
-    color: #7ADDE8;
-    cursor: pointer;
-    text-decoration: underline;
 }
 
 /*form*/
@@ -107,4 +146,10 @@ input[type=submit]:hover {
     color: white;
     font-family: 'Lobster', cursive;
     padding: 20px;
+   }
+
+   @media screen and (max-width: 1024px) {
+    footer {
+        margin-top: 100px;
+    }
    }
