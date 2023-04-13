@@ -1,8 +1,10 @@
 const form = document.querySelector("#form")
 const submitButton = document.querySelector("#submit")
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxLZTlgHBunzjDAyvzTFB9AAQZS2vGT4hSZKlfMDVMQrrHEQwKDYO2-fo05BNfFegYWVg/exec'
+console.log(form);
 
 form.addEventListener('submit', e => {
+  console.log("buttonSubmit")
   submitButton.disabled = true
   e.preventDefault()
   let requestBody = new FormData(form)
