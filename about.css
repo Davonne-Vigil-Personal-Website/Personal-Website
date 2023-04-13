@@ -105,7 +105,6 @@
   }
 
   /*heading 1*/
-
   h1 {
     color:#7ADDE8;
     font-family: 'Lobster' ,cursive;
@@ -259,7 +258,7 @@
   /*images and my interests*/
   h2 {
     display: inline;
-    margin-bottom: 380px;
+    margin-bottom: 360px;
     position: absolute;
     font-family: 'Lobster', cursive;
     color: #7ADDE8;
@@ -281,6 +280,31 @@
     }
   }
 
+  @media screen and (max-width: 700px) {
+    h2 {
+     position: absolute;
+      z-index: 1;
+      bottom: -1250px;
+    }
+  }
+
+  @media screen and (max-width: 414px) {
+    h2 {
+      position: absolute;
+      z-index: 1;
+      top: 246%;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    h2 {
+      position: absolute;
+      z-index: 1;
+      top: 2380px;
+    }
+  }
+
+  /*images*/
   .myInterests {
     display: flex;
     flex-direction: row;
@@ -305,8 +329,77 @@
     border-radius: 10px;
     margin: 10px;
     margin-top: 150px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
+ 
+  /*media queries for images*/
+  @media screen and (max-width: 360px) {
+    .myInterests {
+      display: flex;
+      flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .myInterests img {
+    display: flex;
+    width: 320px;
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .myInterests {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .myInterests img {
+    display: flex;
+    width: 320px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .myInterests {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .myInterests img {
+    display: flex;
+    width: 320px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .myInterests {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .myInterests img {
+    display: flex;
+    width: 320px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+}
 
 /*images shake*/
   .myLife:hover {
