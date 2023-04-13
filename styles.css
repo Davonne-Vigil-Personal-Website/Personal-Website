@@ -14,88 +14,74 @@ html {
 
 /*header*/
 .flex-container {
+    display: flex; 
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.nav {
     display: flex;
-    justify-content: flex-end;
     padding: 20px;
+    font-family: 'Lobster', cursive; 
 }
 
-ul {
-    display: inline;
-}
-
-li {
+a, .links {
     color: white;
-    float: right;
-    font-family: 'Lobster', cursive;
+    text-decoration: none;
     font-size: 22pt;
-    list-style-type: none;
-    padding: 30px;
- }
-    
-li:hover {
-    color: #F5D4A7;
-    cursor: pointer;
+    margin: 10px;
+}
+
+a, .links:hover {
+    color: burlywood;
     text-decoration: underline;
 }
 
-@media (max-width: 800px) {
+/*media queries for navigation: flex-container*/
+@media screen and (max-width: 360px) {
     .flex-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
-  } 
+}
 
-/*more queries to get nav list responsive with mobile devices*/
-@media (max-width: 900px) {
-    .nav, li {
-       display: flex;
-       flex-direction: row;
-       text-decoration: none;
-       justify-content: center;
-   }
- }
-
-@media (max-width: 360px) {
-    .nav, li {
+@media screen and (max-width: 375px) {
+    .flex-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 }
 
-@media (max-width: 375px) {
-    .nav, li {
+@media screen and (max-width: 414px) {
+    .flex-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 }
 
-@media (max-width: 414px) {
-     .nav, li {
+@media screen and (max-width: 481px) {
+    .flex-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 }
 
-@media (max-width: 540px) {
-    .nav, li {
+@media screen and (max-width: 547px) {
+    .flex-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
-      
+        align-items: center;
     }
 }
-
-/*order of lists*/
-@media (max-width: 540px){
-    li:first-child {
-        order: 4;
-    }
-}
-
 /*content*/
 .content {
     margin-top: 250px;
