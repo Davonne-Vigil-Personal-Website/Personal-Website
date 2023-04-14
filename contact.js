@@ -4,7 +4,6 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxLZTlgHBunzjDAyvzTFB
 console.log(form);
 
 form.addEventListener('submit', e => {
-  console.log("buttonSubmit")
   submitButton.disabled = true
   e.preventDefault()
   let requestBody = new FormData(form)
