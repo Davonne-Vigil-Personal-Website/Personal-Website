@@ -292,7 +292,8 @@
     h2 {
       position: absolute;
       z-index: 1;
-      top: 246%;
+      top: 244%;
+      padding: 10px;
     }
   }
 
@@ -301,6 +302,15 @@
       position: absolute;
       z-index: 1;
       top: 2380px;
+      padding: 10px;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    h2 {
+      position: absolute;
+      z-index: 1;
+      top: 2350px;
     }
   }
 
@@ -395,6 +405,16 @@
   .myInterests img {
     display: flex;
     width: 320px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .myInterests img {
+    display: flex;
+    width: 180px;
     margin: auto;
     margin-top: 80px;
     margin-bottom: 40px;
