@@ -64,6 +64,15 @@
     }
   }
 
+  @media screen and (max-width: 529px) {
+    .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
   @media screen and (max-width: 769px) {
     .flex-container {
        justify-content: center;

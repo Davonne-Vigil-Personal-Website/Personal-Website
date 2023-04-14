@@ -79,6 +79,15 @@ a, li {
     }
   }
 
+  @media screen and (max-width: 529px) {
+    .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
 
 /*heading 1*/
 .connect {
