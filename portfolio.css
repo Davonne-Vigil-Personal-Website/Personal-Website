@@ -1,36 +1,84 @@
 /*portfolio page css*/
 
 /*html*/
-* {
-    box-sizing: border-box;
- }
-
 html {
     background-color: #7ADDE8;
 }
 
-/*header*/
-ul {
-    display: inline;
+body {
+    margin: 0;
 }
 
-li {
-    color: black;
-    float: right;
-    font-family: 'Lobster', cursive;
-    font-size: 22pt;
-    list-style-type: none;
-    padding: 30px;
- }
+/*header*/
+.flex-container {
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    margin-bottom: 20px;
+}
 
-li:hover {
+a, li {
+    display: inline;
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    padding: 10px;
+    font-size: 22pt;
+    color: black;
+  }
+
+  li:hover {
     color: #7ADDE8;
     cursor: pointer;
     text-decoration: underline;
-}
+  }
 
-/*body*/
-.box {
+  @media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+    .flex-container {
+       justify-content: center;
+       align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .links {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .links {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 414px) {
+    .links {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 529px) {
+    .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+/*main content*/
+.main {
     width: 100%;
     height: 100%;
     max-width: 1300px;
@@ -43,64 +91,55 @@ li:hover {
     margin-bottom: 60px; 
 }
 
- /*content*/
-h1 {
-    color: #7ADDE8;
-    font-family: 'Lobster', cursive;
-    margin: 20px;
-    padding: 50px;
-    font-size: 3em;
-    text-decoration: underline;
-}
-
-/*image of github and github link*/
-.github {
-    width: 100%;
-    height: auto;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    border-radius: 60px;
-    padding: 30px;
-    margin-bottom: 80px;
-}
-
-p1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18pt;
-    text-align: justify;
-}
-
-.follow {
-    width: 600px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto; 
+/*heading 1*/
+.myPortfolio {
     padding: 20px;
-    display: block;
-    margin-top: 60px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
 }
 
-a, .github {
-    font-family: monospace;
-    color: black;
-    font-size: 16pt;
-    padding: 10px;
+.myPortfolio span {
+    display: inline-block;
+    animation: flip 7s infinite;
+    color:#7ADDE8;
+    text-decoration: underline;
+    font-size: 4em;
 }
 
-.github,a:hover {
-    color:  #7ADDE8;
-    cursor: pointer;
-    font-weight: bold;
+@keyframes flip {
+0%, 60%  {
+      transform: rotateY(360deg) 
+    }
 }
 
 /*my projects*/
+.myProjects {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+}
+
 .column {
     float: left;
-    width: 40%;
+    width: 45%;
     padding: 20px;
     height: 350px;
+}
+
+/*I cannot get column to stay in the middle*/
+@media screen and (max-width: 600px) {
+    .column {
+      width: 40%;
+      margin-left: 500px; 
+      margin: 40px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+      margin-left: 120px;
+    }
 }
 
 .row:after {
@@ -122,10 +161,146 @@ p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 14pt;
     font-weight: bold;
+    text-align: justify;
 }
 
-.myProjects {
+/*github image and text*/
+.github {
     width: 100%;
     height: auto;
-    max-width: 350px;
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 100px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.myGithub {
+    position: relative;
+    text-align: center;
+}
+
+.link {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22pt;
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .link {
+        font-size: 16pt;
+        text-align: center;
+    }
+} 
+
+@media screen and (max-width: 375px) {
+    .link {
+        font-size: 12pt;
+        text-align: center;
+    }
+} 
+
+@media screen and (max-width: 390px) {
+    .link {
+        font-size: 12pt;
+        text-align: center;
+    }
+} 
+
+@media screen and (max-width: 360px) {
+    .link {
+        font-size: 12pt;
+        text-align: center;
+    }
+} 
+
+@media screen and (max-width: 280px) {
+    .link {
+        font-size: 10pt;
+        text-align: center;
+    }
+} 
+
+/*explore button*/
+.explore {
+    background-color: #0D4DAD !important;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+    font-size: 14pt;
+    font-family: 'Space Grotesk', sans-serif;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.explore:hover {
+    background-color: burlywood;
+    color: #7ADDE8;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .explore {
+        top: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .explore {
+        top: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .explore {
+        top: 180px;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .explore {
+        top: 170px;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .explore {
+        top: 170px;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .explore {
+        top: 140px;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+}
+
+/*footer*/
+ footer {
+    text-align: center;
+    color: white;
+    font-family: 'Lobster', cursive;
+    padding: 20px;
 }

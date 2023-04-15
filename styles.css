@@ -7,34 +7,88 @@ body html {
 }
 
 html {
-    background-image: url("cloudsBirds.jpg");
+    background-image: url("images/cloudsBirds.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    min-height: 100%;
 }
 
 /*header*/
-ul {
-    display: inline;
+.flex-container {
+    display: flex; 
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
 }
 
-li {
+.nav {
+    display: flex;
+    padding: 20px;
+    font-family: 'Lobster', cursive; 
+}
+
+a, .links {
     color: white;
-    float: right;
-    font-family: 'Lobster', cursive;
+    text-decoration: none;
     font-size: 22pt;
-    list-style-type: none;
-    padding: 30px;
- }
-    
-li:hover {
-    color: #F5D4A7;
-    cursor: pointer;
+    margin: 10px;
+}
+
+a, .links:hover {
+    color: burlywood;
     text-decoration: underline;
 }
 
+/*media queries for navigation: flex-container*/
+@media screen and (max-width: 360px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 547px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}
 /*content*/
 .content {
-    margin-top: 300px;
+    margin-top: 250px;
     text-align: center;
 }
 
@@ -57,4 +111,20 @@ quote {
     padding: 20px;
     margin-top: 300px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .socialMediaLink {
+        margin-top: 500px;
+    }
+}
+
+@media screen and (max-width: 354px) {
+    .socialMediaLink {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

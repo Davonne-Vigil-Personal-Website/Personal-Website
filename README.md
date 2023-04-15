@@ -5,4 +5,3 @@ Hi, my name is Davonne, welcome to my Personal Website! Explore my site to learn
 
 Thanks for visiting my site!
 
-
