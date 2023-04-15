@@ -38,7 +38,7 @@ newPic();
 
 function oldPic() {
     let myDogs = document.getElementById("dogs");
-    myDogs.src = ("images/doggies.jpg");
+    myDogs.src = ("images/myDogs.jpg");
 }
 
 oldPic();
