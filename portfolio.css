@@ -126,7 +126,6 @@ a, li {
     height: 350px;
 }
 
-/*I cannot get column to stay in the middle*/
 @media screen and (max-width: 600px) {
     .column {
       width: 40%;
@@ -135,12 +134,37 @@ a, li {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
     .column {
       width: 50%;
-      margin-left: 120px;
+      margin-left: 190px;
     }
 }
+
+@media screen and (max-width: 360px) {
+    .column {
+      width: 50%;
+      margin-left: 70px;
+     
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .column {
+      width: 50%;
+      margin-left: 70px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .column {
+      width: 50%;
+      margin-left: 70px;
+    }
+}
+
+/*I cannot get column to stay in the middle on mobile screens
+    - 540 (surface duo) */
 
 .row:after {
     content: "";
@@ -175,6 +199,12 @@ p {
     border-radius: 100px;
     margin-top: 40px;
     margin-bottom: 80px;
+}
+
+@media screen and (max-width: 280px) {
+    .github {
+        margin-top: 100px;
+    }
 }
 
 .myGithub {
