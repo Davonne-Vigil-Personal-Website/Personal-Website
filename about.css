@@ -310,8 +310,8 @@
     h2 {
       position: absolute;
       z-index: 1;
-      top: 2380px;
-      padding: 10px;
+      top: 2410px;
+      padding: 15px;
     }
   }
 
@@ -319,9 +319,16 @@
     h2 {
       position: absolute;
       z-index: 1;
-      top: 2350px;
+      top: 2340px;
     }
   }
+
+
+  /*Have to work on screens that are:
+    - 390 (iPhone 12 pro)
+    - 393 (pixel 5)
+    - 540 (surface duo)
+    - 280 (galaxy fold) */
 
   /*images*/
   .myInterests {
