@@ -113,6 +113,11 @@ quote {
     cursor: pointer;
 }
 
+.socialMediaLinkX {
+    width: 100%;
+    max-width: 10px;
+}
+
 @media screen and (max-width: 1024px) {
     .socialMediaLink {
         margin-top: 500px;
